@@ -219,7 +219,7 @@ function init () {
 		var now = new Date(); 
 		
 		//on va tester pour chaque médiathèque si la case du jour d'aujourd'hui contient des horaires
-		for (let i = 0; i < 8; i++) {
+		for (let i = 0; i < mediatheques.length; i++) {
 			//on met dans une variable le contenu de la case du jour
 			var openingDay = mediatheques[i].openingDays[now.getDay() - 1];
 			
@@ -241,7 +241,7 @@ function init () {
 		var now = new Date(); 
 		
 		// on reprends la même logique que précédemment
-		for (let i = 0; i < 8; i++) {
+		for (let i = 0; i < mediatheques.length; i++) {
 			
 			var openingDay = mediatheques[i].openingDays[now.getDay() - 1];
 		
