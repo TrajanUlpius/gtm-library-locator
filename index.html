@@ -1,0 +1,31 @@
+<!--DOCTYPE html-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Carte</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Lien vers la biliothèque leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+   <!-- Lien vers notre script -->
+   <script src="./main.js"> </script>
+   <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="init()">
+  <h3>Carte du réseau des médiathèques de GTM</h3>
+  
+  <!-- balise de la carte-->
+  <div id="mapid"></div>
+  
+  <!-- création des boutons avec les options voulues-->
+  <button id="btnFilterByDay">Ouvert aujourd'hui</button>
+  <button id="btnFilterByTime">Ouvert RIGHT NOW !</button>
+  <button id="btnAll">Toutes</button>
+  
+</body>
+</html>
